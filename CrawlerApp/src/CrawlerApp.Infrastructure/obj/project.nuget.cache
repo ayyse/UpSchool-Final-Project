@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "e0iK7Af4pGipsDxJ9M6KeqGrDJOxvuSo18YvHNyEqykx47aMOXGNFCRDaqSxTjoIFpHa0dcT8Lpb2PwdPB9xLQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Infrastructure\\CrawlerApp.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

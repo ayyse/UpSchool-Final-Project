@@ -1,0 +1,12 @@
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Domain\bin\Debug\net7.0\CrawlerApp.Domain.deps.json
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Domain\bin\Debug\net7.0\CrawlerApp.Domain.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Domain\bin\Debug\net7.0\CrawlerApp.Domain.pdb
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Domain\obj\Debug\net7.0\CrawlerApp.Domain.csproj.AssemblyReference.cache
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Domain\obj\Debug\net7.0\CrawlerApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Domain\obj\Debug\net7.0\CrawlerApp.Domain.AssemblyInfoInputs.cache
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Domain\obj\Debug\net7.0\CrawlerApp.Domain.AssemblyInfo.cs
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Domain\obj\Debug\net7.0\CrawlerApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Domain\obj\Debug\net7.0\CrawlerApp.Domain.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Domain\obj\Debug\net7.0\refint\CrawlerApp.Domain.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Domain\obj\Debug\net7.0\CrawlerApp.Domain.pdb
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Domain\obj\Debug\net7.0\ref\CrawlerApp.Domain.dll
