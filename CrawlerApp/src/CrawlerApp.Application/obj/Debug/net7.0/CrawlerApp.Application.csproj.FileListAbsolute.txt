@@ -10,3 +10,6 @@ C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\Cr
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Application\obj\Debug\net7.0\refint\CrawlerApp.Application.dll
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Application\obj\Debug\net7.0\CrawlerApp.Application.pdb
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Application\obj\Debug\net7.0\ref\CrawlerApp.Application.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Application\bin\Debug\net7.0\CrawlerApp.Domain.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Application\bin\Debug\net7.0\CrawlerApp.Domain.pdb
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Application\obj\Debug\net7.0\CrawlerApp.Application.csproj.CopyComplete

@@ -1,10 +1,15 @@
 ﻿using CrawlerApp.Application.Common.Models.Crawler;
+using CrawlerApp.Application.Common.Models.Product;
 using Microsoft.AspNetCore.SignalR.Client;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using WebDriverManager;
+using WebDriverManager.DriverConfigs.Impl;
 
-Thread.Sleep(5000);
+Console.WriteLine("UpSchool Crawler");
+Console.ReadKey();
 
+new DriverManager().SetUpDriver(new ChromeConfig());
 IWebDriver webDriver = new ChromeDriver();
 
 var hubConnection = new HubConnectionBuilder()
@@ -26,8 +31,8 @@ try
 
     var pageNumbers = webDriver.FindElements(By.ClassName("page-number"));
 
-    Console.WriteLine($"Toplam {pageNumbers.Count} sayfa ürün bulunduğu tespit edildi. " + DateTimeOffset.Now + "\n");
-
+    await hubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog($"Toplam {pageNumbers.Count} sayfa ürün bulunduğu tespit edildi. " + DateTimeOffset.Now + "\n"));
+    
     // We are waiting for the results to load.
     Thread.Sleep(3000);
 
@@ -38,11 +43,12 @@ try
 
         for (int j = 0; j < productNames.Count; j++)
         {
-            Console.WriteLine($"{j + 1}. ürün adı: " + productNames[j].Text);
-            Console.WriteLine($"{j + 1}. ürün fotoğrafı: " + productImages[j].GetAttribute("src") + "\n");
+            //await hubConnection.InvokeAsync("AddProductAsync", AddProduct(productNames[j].Text));
+            
+            //Console.WriteLine($"{j + 1}. ürün adı: " + AddProduct(productNames[j].Text));
+            //Console.WriteLine($"{j + 1}. ürün fotoğrafı: " + productImages[j].GetAttribute("src") + "\n");
         }
-
-        Console.WriteLine($"{i + 1}. sayfa tarandı. Toplam {productNames.Count} ürün bulundu. " + DateTime.Now + "\n");
+        await hubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog($"{i + 1}. sayfa tarandı. Toplam {productNames.Count} ürün bulundu. " + DateTime.Now + "\n"));
 
         if (i != pageNumbers.Count - 1)
         {
@@ -50,11 +56,13 @@ try
 
             webDriver.Navigate().GoToUrl(nextButton.GetAttribute("href"));
 
-            Console.WriteLine($"---------- {i + 2}. sayfaya geçildi. ---------- " + DateTime.Now + "\n");
+            await hubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog($"---------- {i + 2}. sayfaya geçildi. ---------- " + DateTime.Now + "\n"));
         }
     }
 
-    var x = hubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Bot stopped."));
+    Console.ReadKey();
+
+    await hubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Bot stopped."));
 
     webDriver.Quit();
 }
@@ -64,3 +72,5 @@ catch (Exception exception)
 }
 
 CrawlerLogDto CreateLog(string message) => new CrawlerLogDto(message);
+//ProductDto AddProduct(string name) => new ProductDto(name);
+

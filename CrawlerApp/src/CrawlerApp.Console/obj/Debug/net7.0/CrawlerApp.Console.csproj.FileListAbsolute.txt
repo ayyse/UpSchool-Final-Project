@@ -41,3 +41,5 @@ C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\Cr
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Console\obj\Debug\net7.0\ref\CrawlerApp.Console.dll
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Console\bin\Debug\net7.0\CrawlerApp.Application.dll
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Console\bin\Debug\net7.0\CrawlerApp.Application.pdb
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Console\bin\Debug\net7.0\MediatR.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Console\bin\Debug\net7.0\MediatR.Contracts.dll

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "fB07M/gpTE+0l5U69hpGbg30iM8u9vUjZD+nVa0kShW9h+o8N4nAZmMRacNaQ5W1Z5oPRqkmVwiPBCx4YExArg==",
+  "dgSpecHash": "iGYu9GLJWfq1xcJgxeSEZQOXhPbd5GDt3HwZ6txc8HOU12ujVZGQlWLz9wzaE1nWsZayFvAPBQ1q43gs1ooFAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Domain\\CrawlerApp.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aysea\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

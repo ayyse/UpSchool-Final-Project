@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "0fdmpxlBSTp6WUaH5htai1FzBYl3tHPaw7Ff/eB8gJa1UAfKEzYiEf6IwnfuBdE/MuUVzsAq3qDMpUwvRGxl9g==",
+  "dgSpecHash": "zoicMvasWduSWu36ozwXUyc/hRaH5jkirUimppMfmm3mCWnUtu6YxqSvlgBmg4amS51Dvj+dDzuFIMGTbjf8NQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Console\\CrawlerApp.Console.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aysea\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.5\\microsoft.aspnetcore.connections.abstractions.7.0.5.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\7.0.5\\microsoft.aspnetcore.http.connections.client.7.0.5.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\7.0.5\\microsoft.aspnetcore.http.connections.common.7.0.5.nupkg.sha512",

@@ -1,4 +1,5 @@
 ﻿using CrawlerApp.Application.Common.Models.Crawler;
+using CrawlerApp.Application.Common.Models.Product;
 using Microsoft.AspNetCore.SignalR;
 
 namespace CrawlerApp.WebApi.Hubs
@@ -9,5 +10,10 @@ namespace CrawlerApp.WebApi.Hubs
         {
             await Clients.AllExcept(Context.ConnectionId).SendAsync("NewSeleniumLogAdded", log);
         }
+
+        //public async Task AddProductAsync(ProductDto product, CancellationToken cancellationToken)
+        //{
+        //    await Clients.AllExcept(Context.ConnectionId).SendAsync("AddProduct", product);
+        //}
     }
 }

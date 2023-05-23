@@ -13,3 +13,5 @@ C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\Cr
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\obj\Debug\net7.0\refint\CrawlerApp.Infrastructure.dll
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\obj\Debug\net7.0\CrawlerApp.Infrastructure.pdb
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\obj\Debug\net7.0\ref\CrawlerApp.Infrastructure.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Domain.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Domain.pdb
