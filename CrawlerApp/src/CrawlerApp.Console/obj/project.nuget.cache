@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zoicMvasWduSWu36ozwXUyc/hRaH5jkirUimppMfmm3mCWnUtu6YxqSvlgBmg4amS51Dvj+dDzuFIMGTbjf8NQ==",
+  "dgSpecHash": "nWBTeObt0O3x2sW10aF0UtYCi+G5Vo/mlLw8OvNfYtAUZoPsHBTDlFXJbSKqPbwCvJFVfooNU+o8xkGFcjv6Dw==",
   "success": true,
   "projectFilePath": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Console\\CrawlerApp.Console.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,11 @@
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\7.0.5\\microsoft.aspnetcore.signalr.client.core.7.0.5.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\7.0.5\\microsoft.aspnetcore.signalr.common.7.0.5.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\7.0.5\\microsoft.aspnetcore.signalr.protocols.json.7.0.5.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.features\\7.0.5\\microsoft.extensions.features.7.0.5.nupkg.sha512",

@@ -22,6 +22,10 @@
       "Microsoft.AspNetCore.SignalR.Client.Core.dll": "sha256-7hlz5draZaPwUtjQLXPvyAPa6cS5E24h2rAxN13VKTU=",
       "Microsoft.AspNetCore.SignalR.Common.dll": "sha256-znH9hfJfIIgHnduO6NFEpU78uB\/cZb8qv0psiibiCHs=",
       "Microsoft.AspNetCore.SignalR.Protocols.Json.dll": "sha256-w7o2ROxKF08\/2dfHqcKpFqi49FSrHYl2QOCs2QqMC6U=",
+      "Microsoft.EntityFrameworkCore.dll": "sha256-lsb0jHoEcZ7+PKRj6aRDmF3vFqDeKVhLcLRaCDRyj7Q=",
+      "Microsoft.EntityFrameworkCore.Abstractions.dll": "sha256-t\/GI\/h9opBsB8+TwqiLAyVTkI9JkTdt8swRFoZgWdVM=",
+      "Microsoft.Extensions.Caching.Abstractions.dll": "sha256-tiD1Xg\/wcoUkJVBDtLfs5EiB1IwSUm0d\/lPffRVbKOc=",
+      "Microsoft.Extensions.Caching.Memory.dll": "sha256-xNEDLuTrpWv6Lq76qNCi\/PYwN6Ev6cjFAzNQPsAKMfg=",
       "Microsoft.Extensions.Configuration.dll": "sha256-PqQvp77oZ4+uuy2ElXk8AU9I6RfZSf18UGTrd4rulOo=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-CnS3b9EMFQmETBUVEgtcron4DBsfFdcVt3zfCP6Uflg=",
       "Microsoft.Extensions.Configuration.Binder.dll": "sha256-7GY9+7Cm0Z8DJ+JCFwgCx9OfFtUvXlFHaaLlBYmXfIE=",
@@ -208,17 +212,17 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "CrawlerApp.Application.dll": "sha256-VSmo+w4kBUqQxfXFaUS4u7YifrKnreqdjFDbWD0hkmQ=",
-      "CrawlerApp.Domain.dll": "sha256-3qF2F9R0\/jv\/3QWBnwa1VYPEEgPN8czY2OKKK8iX5J0=",
-      "CrawlerApp.Wasm.dll": "sha256-5JRMeiAy7aI1dfIP+4q7ouYbjFLdFEUTQyVox20ASWk="
+      "CrawlerApp.Application.dll": "sha256-4TKy3VAyAXFSy2XLxdmaligZY\/C+xfK6Yac1DcXrUZI=",
+      "CrawlerApp.Domain.dll": "sha256-oVaZ3GWtFTp51TZ1yvikEksWfoyz2v+OMpOM+qusiuo=",
+      "CrawlerApp.Wasm.dll": "sha256-\/R6oX2ZxvTD6qFSSNKssBx19eKlzZ2NVyExspiIj5hA="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "CrawlerApp.Application.pdb": "sha256-dFjeFmBJP3ZeAVgTuudHL10pNM6vx8GhIiSiCopj6O8=",
-      "CrawlerApp.Domain.pdb": "sha256-JkrfvJ+gBupY0QbKKcltY2tr\/RPMUJvqlSoStcSNeGk=",
-      "CrawlerApp.Wasm.pdb": "sha256-W2TiGKVw1sGgNbnW1JTZrIUCVzkev7oPQG+VX6fLqAI="
+      "CrawlerApp.Application.pdb": "sha256-R5x5l6c8wcmsjd9xQHsWRcea1r3j4wM6\/p+0iN9CY+4=",
+      "CrawlerApp.Domain.pdb": "sha256-2U6s5qx42GqJOiXLRrCjZln3CxsBT5954UrBb5ZTKKg=",
+      "CrawlerApp.Wasm.pdb": "sha256-YYXjqpugTltnTwixvDoxUI8Ge+IYFoWt5kHRh7oIpis="
     },
     "runtime": {
       "dotnet.7.0.5.rch4hhjaxf.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

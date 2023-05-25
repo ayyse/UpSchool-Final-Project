@@ -1,6 +1,8 @@
 using CrawlerApp.WebApi.Hubs;
 using CrawlerApp.Infrastructure;
+using CrawlerApp.Application;
 using CrawlerApp.Application.Common.Interfaces;
+using CrawlerApp.WebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddInfrastructure(builder.Configuration);
+//builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddSignalR();
 
@@ -24,6 +26,10 @@ builder.Services.AddCors(options =>
             .SetIsOriginAllowed((host) => true)
             .AllowAnyHeader());
 });
+
+// Add services to the container.
+builder.Services.AddApplicationServices();
+builder.Services.AddInfrastructureServices(builder.Configuration);
 
 var app = builder.Build();
 

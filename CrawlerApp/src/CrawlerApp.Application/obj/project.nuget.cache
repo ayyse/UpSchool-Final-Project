@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "U/TNclzhGIqTEW+M6pxmNibSfHEPpZdeIBdDi43jh0lbZTvlnG1N86B2cvXXp6yZJy5YV2jF9pz7+G4rkm3HKQ==",
+  "dgSpecHash": "g2hrDIzkCPR/I9DIH25vpA8gK9GZbhtrYuTT53iTU3x23uMviWe8P8GdFnja2VAYHLlI1pEepABN5dO54FAAPQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Application\\CrawlerApp.Application.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,11 @@
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\7.0.5\\microsoft.aspnetcore.signalr.client.core.7.0.5.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\7.0.5\\microsoft.aspnetcore.signalr.common.7.0.5.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\7.0.5\\microsoft.aspnetcore.signalr.protocols.json.7.0.5.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.features\\7.0.5\\microsoft.extensions.features.7.0.5.nupkg.sha512",

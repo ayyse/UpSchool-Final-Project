@@ -1,15 +1,21 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using CrawlerApp.Application.Common.Interfaces;
+using CrawlerApp.Infrastructure.Persistence.Contexts;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CrawlerApp.Infrastructure
 {
     public static class ConfigureServices
     {
-        public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
+        public static void AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
+            var connectionString = configuration.GetConnectionString("MariaDB")!;
 
+            // DbContext
+            services.AddDbContext<ApplicationDbContext>(opt => opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
-            return services;
+            services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
         }
     }
 }

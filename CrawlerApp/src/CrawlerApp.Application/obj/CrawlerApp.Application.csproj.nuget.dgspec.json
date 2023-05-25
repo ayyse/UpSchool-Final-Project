@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.SignalR.Client.Core": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
             }
           },
           "imports": [

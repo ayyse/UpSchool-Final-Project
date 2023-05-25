@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5gZCifvrGFfJDVaQAIvmMXEPTseUu+FxDhebdinphMTStCbOwMYB2pAQUsyKk46v9nEEekAefeIwBONXCitS8A==",
+  "dgSpecHash": "z8+zql35qddfJvR/6cYL8zTXHEQ52xNsIbcPHkyKT9lM6SOPHg/DXt347uZbcsHrD3GYYCr97Yt/jsimAUYORg==",
   "success": true,
   "projectFilePath": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\CrawlerApp.Wasm.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,11 @@
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\7.0.5\\microsoft.aspnetcore.signalr.client.core.7.0.5.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\7.0.5\\microsoft.aspnetcore.signalr.common.7.0.5.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\7.0.5\\microsoft.aspnetcore.signalr.protocols.json.7.0.5.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.4\\microsoft.extensions.configuration.binder.7.0.4.nupkg.sha512",
