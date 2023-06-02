@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vqnEF1JjuyN/1k1BW1WSUVthJ9x2HYUBhP+wVn1vVUQ=",
+  "Hash": "XUe+gkUQ0MavFIgokPQoiC1VVlzLcrlhSlBjVVO7f7Q=",
   "Source": "CrawlerApp.Wasm",
   "BasePath": "/",
   "Mode": "Root",
@@ -304,6 +304,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aysea\\.nuget\\packages\\mediatr\\12.0.1\\lib\\net6.0\\MediatR.dll"
+    },
+    {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\MediatR.Extensions.Microsoft.DependencyInjection.dll",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MediatR.Extensions.Microsoft.DependencyInjection.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.0\\lib\\netstandard2.1\\MediatR.Extensions.Microsoft.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
@@ -5489,6 +5506,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Connections.Common.dll"
+    },
+    {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\jAVZ3YSD.gz",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MediatR.Extensions.Microsoft.DependencyInjection.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\MediatR.Extensions.Microsoft.DependencyInjection.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\MediatR.Extensions.Microsoft.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\jcX6DNLK.gz",

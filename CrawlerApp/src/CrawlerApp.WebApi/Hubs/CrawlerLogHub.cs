@@ -11,9 +11,9 @@ namespace CrawlerApp.WebApi.Hubs
             await Clients.AllExcept(Context.ConnectionId).SendAsync("NewSeleniumLogAdded", log);
         }
 
-        //public async Task AddProductAsync(ProductDto product, CancellationToken cancellationToken)
-        //{
-        //    await Clients.AllExcept(Context.ConnectionId).SendAsync("AddProduct", product);
-        //}
+        public async Task GetAllProductsAsync(ProductDto product)
+        {
+            await Clients.AllExcept(Context.ConnectionId).SendAsync("GetAll", product);
+        }
     }
 }

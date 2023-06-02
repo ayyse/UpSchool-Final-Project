@@ -1,9 +1,45 @@
 ﻿@page "/"
+@using CrawlerApp.Application.Common.Models.Product;
+@using CrawlerApp.Application.Features.Products.Commands.Add;
+@using MediatR;
+@using Microsoft.AspNetCore.SignalR.Client;
+@inject HttpClient HttpClient
+@inject IMediator Mediator
 
-<PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+@code {
+    private List<ProductDto> products = new List<ProductDto>();   
+    private ProductAddCommand command = new ProductAddCommand();
 
-Welcome to your new app.
+    private HubConnection? hubConnection;
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+    protected override async Task OnInitializedAsync()
+    {
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl($"https://localhost:7015/Hubs/CrawlerLogHub")
+            .WithAutomaticReconnect()
+            .Build();
+
+        hubConnection.On<ProductDto>("GetAll", async (productDto) =>
+        {
+            command.Id = productDto.Id;
+            command.Name = productDto.Name;
+            command.Picture = productDto.Picture;
+            command.Price = productDto.Price;
+            command.SalePrice = productDto.SalePrice;
+
+            await HttpClient.PostAsJsonAsync("Products", command);
+            //await Mediator.Send(command);
+
+            //hubConnection.InvokeAsync("AddProductAsync", command);
+        });
+
+        
+        
+        
+
+        await hubConnection.StartAsync();
+
+        await base.OnInitializedAsync();
+    }
+}

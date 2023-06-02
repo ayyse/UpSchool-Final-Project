@@ -9,6 +9,7 @@
     "assembly": {
       "MediatR.dll": "sha256-VtmbxEy7LTAs8mimMOyF3kQksYHd6KCNAqYQsvIa1dg=",
       "MediatR.Contracts.dll": "sha256-wmATBKqdFcUaVD4cMwA2jGSsOGM+cne7g1oE9o3famE=",
+      "MediatR.Extensions.Microsoft.DependencyInjection.dll": "sha256-Eh8BdV0xKtZBQl636X+sfejrC9RSsqHYjgu5wW70WMI=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-\/EkWRHMHBhfvvlx5hLVtXGPm8+Gyp4WkPiKKiiJIrqQ=",
       "Microsoft.AspNetCore.Components.dll": "sha256-SvjxqyTqc68zPsYivPRkvjKRhUg5zYufzqwGNS83bwg=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-eoQ2CgfBGkvbK4QUMBgFDPIBqJem+g8247Fb3ZmnmCI=",
@@ -212,17 +213,17 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "CrawlerApp.Application.dll": "sha256-4TKy3VAyAXFSy2XLxdmaligZY\/C+xfK6Yac1DcXrUZI=",
-      "CrawlerApp.Domain.dll": "sha256-oVaZ3GWtFTp51TZ1yvikEksWfoyz2v+OMpOM+qusiuo=",
-      "CrawlerApp.Wasm.dll": "sha256-\/R6oX2ZxvTD6qFSSNKssBx19eKlzZ2NVyExspiIj5hA="
+      "CrawlerApp.Application.dll": "sha256-GetdW4ixoKnDZuviiZ0K6hol8amaDHS3OHiXspGu3xE=",
+      "CrawlerApp.Domain.dll": "sha256-bxhnm8nsTwZXY+0aCSx5Qxfcbtull5phjp+XBzrAH6s=",
+      "CrawlerApp.Wasm.dll": "sha256-W6G3eWNmDdCBetgWcWtlYFTThjGxGMynzTX++47+09k="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "CrawlerApp.Application.pdb": "sha256-R5x5l6c8wcmsjd9xQHsWRcea1r3j4wM6\/p+0iN9CY+4=",
-      "CrawlerApp.Domain.pdb": "sha256-2U6s5qx42GqJOiXLRrCjZln3CxsBT5954UrBb5ZTKKg=",
-      "CrawlerApp.Wasm.pdb": "sha256-YYXjqpugTltnTwixvDoxUI8Ge+IYFoWt5kHRh7oIpis="
+      "CrawlerApp.Application.pdb": "sha256-GAWp3\/iFb8VXXG9Y+QdZOuqT03oZ828QWrrmkiZsfpo=",
+      "CrawlerApp.Domain.pdb": "sha256-bm0kShXbcizW1iKUlSIpApSAUEb1SaMP7zaytuC1yyc=",
+      "CrawlerApp.Wasm.pdb": "sha256-o7wl3NmTYZhFdq5gG2tUnWTUMK8PWrvS4Wq6A\/DvZW4="
     },
     "runtime": {
       "dotnet.7.0.5.rch4hhjaxf.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

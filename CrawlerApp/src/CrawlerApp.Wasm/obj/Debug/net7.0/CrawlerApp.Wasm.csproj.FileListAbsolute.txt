@@ -646,8 +646,6 @@ C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\Cr
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\bin\Debug\net7.0\CrawlerApp.Domain.pdb
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\CrawlerApp.Wasm.csproj.AssemblyReference.cache
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\CrawlerApp.Wasm.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\CrawlerApp.Wasm.AssemblyInfoInputs.cache
-C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\CrawlerApp.Wasm.AssemblyInfo.cs
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\CrawlerApp.Wasm.csproj.CoreCompileInputs.cache
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\CrawlerApp.Wasm.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\build-gz\M7DmQ4+o.gz
@@ -898,3 +896,9 @@ C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\Cr
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\build-gz\MxA+6+0E.gz
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\build-gz\rBJVEUMv.gz
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\build-gz\EYrt+BQa.gz
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\bin\Debug\net7.0\wwwroot\_framework\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\bin\Debug\net7.0\wwwroot\_framework\MediatR.Extensions.Microsoft.DependencyInjection.dll.gz
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\CrawlerApp.Wasm.AssemblyInfoInputs.cache
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\CrawlerApp.Wasm.AssemblyInfo.cs
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Wasm\obj\Debug\net7.0\build-gz\jAVZ3YSD.gz

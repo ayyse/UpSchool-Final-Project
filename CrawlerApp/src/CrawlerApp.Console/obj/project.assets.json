@@ -1558,7 +1558,6 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "CrawlerApp.Application >= 1.0.0",
-      "CrawlerApp.Domain >= 1.0.0",
       "Microsoft.AspNetCore.SignalR.Client >= 7.0.5",
       "Selenium.WebDriver >= 4.9.1",
       "WebDriverManager >= 2.16.2"
@@ -1593,9 +1592,6 @@
           "projectReferences": {
             "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Application\\CrawlerApp.Application.csproj": {
               "projectPath": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Application\\CrawlerApp.Application.csproj"
-            },
-            "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Domain\\CrawlerApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Domain\\CrawlerApp.Domain.csproj"
             }
           }
         }

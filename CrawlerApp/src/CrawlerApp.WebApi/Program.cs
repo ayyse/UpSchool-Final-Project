@@ -1,8 +1,8 @@
-using CrawlerApp.WebApi.Hubs;
+using CrawlerApp.Application.Common.Interfaces;
 using CrawlerApp.Infrastructure;
 using CrawlerApp.Application;
-using CrawlerApp.Application.Common.Interfaces;
-using CrawlerApp.WebApi.Services;
+using CrawlerApp.WebApi;
+using CrawlerApp.WebApi.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +30,8 @@ builder.Services.AddCors(options =>
 // Add services to the container.
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
+
+builder.Services.AddScoped<IProductHubService, ProductHubManager>();
 
 var app = builder.Build();
 

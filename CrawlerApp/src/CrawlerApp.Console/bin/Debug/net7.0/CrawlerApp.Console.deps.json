@@ -9,7 +9,6 @@
       "CrawlerApp.Console/1.0.0": {
         "dependencies": {
           "CrawlerApp.Application": "1.0.0",
-          "CrawlerApp.Domain": "1.0.0",
           "Microsoft.AspNetCore.SignalR.Client": "7.0.5",
           "Selenium.WebDriver": "4.9.1",
           "WebDriverManager": "2.16.2"

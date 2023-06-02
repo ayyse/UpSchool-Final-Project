@@ -1,24 +1,52 @@
 ﻿using CrawlerApp.Application.Common.Interfaces;
-using CrawlerApp.Application.Common.Models.Crawler;
 using CrawlerApp.Application.Common.Models.Product;
+using CrawlerApp.Domain.Common;
+using CrawlerApp.Domain.Entities;
 using MediatR;
 
 namespace CrawlerApp.Application.Features.Products.Commands.Add
 {
-    public class ProductAddCommandHandler //: IRequestHandler<ProductDto, Guid>
+    public class ProductAddCommandHandler : IRequestHandler<ProductAddCommand, Response<Guid>>
     {
-        //private readonly IHubContext<CrawlerLogHub> _hubContext;
+        private readonly IApplicationDbContext _applicationDbContext;
+        private readonly IProductHubService _productHubService;
 
-        //public AccountHubManager(IHubContext<AccountHub> hubContext)
-        //{
-        //    _hubContext = hubContext;
-        //}
+        public ProductAddCommandHandler(IApplicationDbContext applicationDbContext, IProductHubService productHubService)
+        {
+            _applicationDbContext = applicationDbContext;
+            _productHubService = productHubService;
+        }
 
-        //public async Task<Guid> Handle(ProductDto request, CancellationToken cancellationToken)
-        //{
-        //    await _accountHubService.AddProductAsync(request, cancellationToken);
+        public async Task<Response<Guid>> Handle(ProductAddCommand request, CancellationToken cancellationToken)
+        {
+            var product = new Product()
+            {
+                Name = request.Name,
+                Picture = request.Picture,
+                IsOnSale = request.IsOnSale,
+                Price = request.Price,
+                SalePrice = request.SalePrice,
+                OrderId = Guid.NewGuid()
+            };
 
-        //    return request.Id;
-        //}
+            await _applicationDbContext.Products.AddAsync(product, cancellationToken);
+
+            await _applicationDbContext.SaveChangesAsync(cancellationToken);
+
+            await _productHubService.AddProductAsync(MapCommandToDto(request), cancellationToken);
+
+            return new Response<Guid>("Eklendi", product.Id);
+        }
+
+        private ProductDto MapCommandToDto(ProductAddCommand command)
+        {
+            return new ProductDto()
+            {
+                Name = command.Name,
+                Picture = command.Picture,
+                Price = command.Price,
+                SalePrice = command.SalePrice
+            };
+        }
     }
 }
