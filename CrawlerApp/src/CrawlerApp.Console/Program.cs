@@ -1,12 +1,10 @@
 ﻿using CrawlerApp.Application.Common.Models.Crawler;
 using CrawlerApp.Application.Common.Models.Product;
-using CrawlerApp.Application.Features.Products.Commands.Add;
 using Microsoft.AspNetCore.SignalR.Client;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using WebDriverManager;
 using WebDriverManager.DriverConfigs.Impl;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 Console.WriteLine("UpSchool Crawler");
 Console.ReadKey();
@@ -53,16 +51,24 @@ try
 
             string[] prices = parts[1].Split(' ');
 
-            decimal price = decimal.Parse(prices[0].TrimStart('$'));
+            string firstPrice = prices[0].Substring(1).Replace(",", ".");
+
+            decimal price = Convert.ToDecimal(firstPrice);
 
             decimal salePrice = 0;
 
+            bool isOnSale = false;
+
             if (prices.Length == 2)
             {
-                salePrice = decimal.Parse(prices[1].TrimStart('$'));
+                string secondPrice = prices[1].Substring(1).Replace(",", ".");
+                salePrice = decimal.Parse(secondPrice);
+
+                isOnSale = true;
             }
 
-            await hubConnection.InvokeAsync("GetAllProductsAsync", AddProduct(name, picture, price, salePrice));
+            await hubConnection.InvokeAsync("GetAllProductsAsync", GetAllProducts(name, picture, price, salePrice, isOnSale));
+
         }
 
         //await hubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog($"{i + 1}. sayfa tarandı. Toplam {productNames.Count} ürün bulundu. " + DateTime.Now + "\n"));
@@ -76,8 +82,6 @@ try
             //await hubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog($"---------- {i + 2}. sayfaya geçildi. ---------- " + DateTime.Now + "\n"));
         }
     }
-
-
     Console.ReadKey();
 
 //await hubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Bot stopped."));
@@ -90,4 +94,6 @@ catch (Exception exception)
 }
 
 CrawlerLogDto CreateLog(string message) => new CrawlerLogDto(message);
-ProductDto AddProduct(string name, string picture, decimal price, decimal salePrice) => new ProductDto(name, picture, price, salePrice);
+ProductDto GetAllProducts(string name, string picture, decimal price, decimal salePrice, bool isOnSale) => new ProductDto(name, picture, price, salePrice, isOnSale);
+ProductDto GetDiscountedProducts(string name, string picture, decimal price, decimal salePrice, bool isOnSale) => new ProductDto(name, picture, price, salePrice, isOnSale);
+ProductDto GetNonDiscountedProducts(string name, string picture, decimal price, bool isOnSale) => new ProductDto(name, picture, price, isOnSale);

@@ -1,8 +1,8 @@
 using CrawlerApp.Application.Common.Interfaces;
 using CrawlerApp.Infrastructure;
 using CrawlerApp.Application;
-using CrawlerApp.WebApi;
 using CrawlerApp.WebApi.Hubs;
+using CrawlerApp.WebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

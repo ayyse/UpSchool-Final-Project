@@ -1,24 +1,43 @@
 ﻿@page "/"
 @using CrawlerApp.Application.Common.Models.Product;
+@using CrawlerApp.Application.Features.Orders.Commands.Add;
 @using CrawlerApp.Application.Features.Products.Commands.Add;
+@using CrawlerApp.Domain.Entities;
 @using MediatR;
 @using Microsoft.AspNetCore.SignalR.Client;
+@using CrawlerApp.Domain.Enums;
 @inject HttpClient HttpClient
-@inject IMediator Mediator
+
+
+<TextEdit Style="margin-bottom: 20px;" MaskType="MaskType.RegEx" EditMask="^[0-9]*$" @bind-Value="requestedAmount" />
+
+<Div class="d-flex justify-content-center">
+    <Button Color="Color.Primary" Size="Size.Large" @onclick="CreateGetAllProductsOrder" Outline>Get All Products</Button>
+    <Button Color="Color.Success" Size="Size.Large" @onclick="CreateGetOnDiscountedProductsOrder" Outline>Get On Discount Products</Button>
+    <Button Color="Color.Warning" Size="Size.Large" @onclick="CreateGetNonDiscountedProductsOrder" Outline>Get Non Discount Products</Button>
+</Div>
 
 
 @code {
-    private List<ProductDto> products = new List<ProductDto>();   
+    private int requestedAmount;
+    private OrderAddCommand order = new OrderAddCommand();
     private ProductAddCommand command = new ProductAddCommand();
+
+    private List<ProductAddCommand> onDiscountedProducts = new List<ProductAddCommand>();
+    private List<ProductAddCommand> nonDiscountedProducts = new List<ProductAddCommand>();
 
     private HubConnection? hubConnection;
 
-    protected override async Task OnInitializedAsync()
+    private async Task CreateGetAllProductsOrder()
     {
+        order.Id = Guid.NewGuid();
+        order.ProductCrawlType = ProductCrawlType.All;
+        await HttpClient.PostAsJsonAsync("Orders", order);
+
         hubConnection = new HubConnectionBuilder()
-            .WithUrl($"https://localhost:7015/Hubs/CrawlerLogHub")
-            .WithAutomaticReconnect()
-            .Build();
+        .WithUrl($"https://localhost:7015/Hubs/CrawlerLogHub")
+        .WithAutomaticReconnect()
+        .Build();
 
         hubConnection.On<ProductDto>("GetAll", async (productDto) =>
         {
@@ -27,19 +46,74 @@
             command.Picture = productDto.Picture;
             command.Price = productDto.Price;
             command.SalePrice = productDto.SalePrice;
+            command.IsOnSale = productDto.IsOnSale;
+            command.OrderId = order.Id;
 
             await HttpClient.PostAsJsonAsync("Products", command);
-            //await Mediator.Send(command);
-
-            //hubConnection.InvokeAsync("AddProductAsync", command);
         });
 
-        
-        
-        
+        await hubConnection.StartAsync();
+    }
+
+
+    private async Task CreateGetOnDiscountedProductsOrder()
+    {
+        order.Id = Guid.NewGuid();
+        order.ProductCrawlType = ProductCrawlType.OnDiscount;
+        await HttpClient.PostAsJsonAsync("Orders", order);
+
+        hubConnection = new HubConnectionBuilder()
+        .WithUrl($"https://localhost:7015/Hubs/CrawlerLogHub")
+        .WithAutomaticReconnect()
+        .Build();
+
+        hubConnection.On<ProductDto>("GetAll", async (productDto) =>
+        {
+            if (productDto.IsOnSale == true)
+            {
+                command.Id = productDto.Id;
+                command.Name = productDto.Name;
+                command.Picture = productDto.Picture;
+                command.Price = productDto.Price;
+                command.SalePrice = productDto.SalePrice;
+                command.IsOnSale = productDto.IsOnSale;
+                command.OrderId = order.Id;
+
+                await HttpClient.PostAsJsonAsync("Products", command);
+            }
+        });
 
         await hubConnection.StartAsync();
+    }
 
-        await base.OnInitializedAsync();
+
+    private async Task CreateGetNonDiscountedProductsOrder()
+    {
+        order.Id = Guid.NewGuid();
+        order.ProductCrawlType = ProductCrawlType.NonDiscount;
+        await HttpClient.PostAsJsonAsync("Orders", order);
+
+        hubConnection = new HubConnectionBuilder()
+        .WithUrl($"https://localhost:7015/Hubs/CrawlerLogHub")
+        .WithAutomaticReconnect()
+        .Build();
+
+        hubConnection.On<ProductDto>("GetAll", async (productDto) =>
+        {
+            if (productDto.IsOnSale == false)
+            {
+                command.Id = productDto.Id;
+                command.Name = productDto.Name;
+                command.Picture = productDto.Picture;
+                command.Price = productDto.Price;
+                command.SalePrice = productDto.SalePrice;
+                command.IsOnSale = productDto.IsOnSale;
+                command.OrderId = order.Id;
+            }
+
+            await HttpClient.PostAsJsonAsync("Products", command);
+        });
+
+        await hubConnection.StartAsync();
     }
 }

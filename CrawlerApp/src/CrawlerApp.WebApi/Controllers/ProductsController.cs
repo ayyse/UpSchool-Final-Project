@@ -8,7 +8,8 @@ namespace CrawlerApp.WebApi.Controllers
         [HttpPost]
         public async Task<IActionResult> AddAsync(ProductAddCommand command)
         {
-            return Ok(await Mediator.Send(command));
+            var result = await Mediator.Send(command);
+            return Ok(result);
         }
     }
 }

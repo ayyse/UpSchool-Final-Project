@@ -9,6 +9,7 @@ namespace CrawlerApp.Infrastructure.Persistence.Contexts
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderEvent> OrderEvents { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {

@@ -12,15 +12,15 @@ namespace CrawlerApp.Infrastructure.Persistence.Configurations.Application
             builder.HasKey(x => x.Id);
 
             // RequestedAmount
-            builder.Property(x => x.RequestedAmount).IsRequired();
+            //builder.Property(x => x.RequestedAmount).IsRequired();
 
-            // TotalFoundAmount
-            builder.Property(x => x.TotalFoundAmount).IsRequired();
+            //// TotalFoundAmount
+            //builder.Property(x => x.TotalFoundAmount).IsRequired();
 
             // Relationships
-            builder.HasMany<Product>(x => x.Products)
-                .WithOne(x => x.Order)
-                .HasForeignKey(x => x.OrderId);
+            //builder.HasMany<OrderEvent>(x => x.OrderEvents)
+            //    .WithOne(x => x.Order)
+            //    .HasForeignKey(x => x.OrderId);
 
             builder.ToTable("Orders");
         }

@@ -11,6 +11,7 @@ namespace CrawlerApp.Application.Features.Products.Commands.Add
         public bool IsOnSale { get; set; }
         public decimal Price { get; set; }
         public decimal? SalePrice { get; set; }
+        public Guid OrderId { get; set; }
 
         //public ProductAddCommand(string name)
         //{

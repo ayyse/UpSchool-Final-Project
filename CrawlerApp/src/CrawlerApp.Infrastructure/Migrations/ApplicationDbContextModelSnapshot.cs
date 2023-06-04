@@ -25,15 +25,31 @@ namespace CrawlerApp.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
-                    b.Property<int>("RequestedAmount")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TotalFoundAmount")
+                    b.Property<int>("ProductCrawlType")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.ToTable("Orders", (string)null);
+                });
+
+            modelBuilder.Entity("CrawlerApp.Domain.Entities.OrderEvent", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<Guid>("OrderId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.ToTable("OrderEvents", (string)null);
                 });
 
             modelBuilder.Entity("CrawlerApp.Domain.Entities.Product", b =>
@@ -59,10 +75,10 @@ namespace CrawlerApp.Infrastructure.Migrations
                         .HasColumnType("varchar(150)");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("decimal(11,8)");
+                        .HasColumnType("decimal(11,4)");
 
                     b.Property<decimal?>("SalePrice")
-                        .HasColumnType("decimal(11,8)");
+                        .HasColumnType("decimal(11,4)");
 
                     b.HasKey("Id");
 
@@ -71,6 +87,17 @@ namespace CrawlerApp.Infrastructure.Migrations
                     b.HasIndex("OrderId");
 
                     b.ToTable("Products", (string)null);
+                });
+
+            modelBuilder.Entity("CrawlerApp.Domain.Entities.OrderEvent", b =>
+                {
+                    b.HasOne("CrawlerApp.Domain.Entities.Order", "Order")
+                        .WithMany("OrderEvents")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
                 });
 
             modelBuilder.Entity("CrawlerApp.Domain.Entities.Product", b =>
@@ -86,6 +113,8 @@ namespace CrawlerApp.Infrastructure.Migrations
 
             modelBuilder.Entity("CrawlerApp.Domain.Entities.Order", b =>
                 {
+                    b.Navigation("OrderEvents");
+
                     b.Navigation("Products");
                 });
 #pragma warning restore 612, 618

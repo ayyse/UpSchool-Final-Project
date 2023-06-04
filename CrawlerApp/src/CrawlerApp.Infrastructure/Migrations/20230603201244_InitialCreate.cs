@@ -19,12 +19,31 @@ namespace CrawlerApp.Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
-                    RequestedAmount = table.Column<int>(type: "int", nullable: false),
-                    TotalFoundAmount = table.Column<int>(type: "int", nullable: false)
+                    ProductCrawlType = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Orders", x => x.Id);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "OrderEvents",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
+                    OrderId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
+                    Status = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OrderEvents", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_OrderEvents_Orders_OrderId",
+                        column: x => x.OrderId,
+                        principalTable: "Orders",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -38,8 +57,8 @@ namespace CrawlerApp.Infrastructure.Migrations
                     Picture = table.Column<string>(type: "varchar(150)", maxLength: 150, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     IsOnSale = table.Column<bool>(type: "tinyint(1)", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(11,8)", nullable: false),
-                    SalePrice = table.Column<decimal>(type: "decimal(11,8)", nullable: true),
+                    Price = table.Column<decimal>(type: "decimal(11,4)", nullable: false),
+                    SalePrice = table.Column<decimal>(type: "decimal(11,4)", nullable: true),
                     OrderId = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci")
                 },
                 constraints: table =>
@@ -55,6 +74,11 @@ namespace CrawlerApp.Infrastructure.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateIndex(
+                name: "IX_OrderEvents_OrderId",
+                table: "OrderEvents",
+                column: "OrderId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Products_Name",
                 table: "Products",
                 column: "Name");
@@ -68,6 +92,9 @@ namespace CrawlerApp.Infrastructure.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "OrderEvents");
+
             migrationBuilder.DropTable(
                 name: "Products");
 

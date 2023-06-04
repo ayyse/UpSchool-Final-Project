@@ -7,6 +7,7 @@ namespace CrawlerApp.Application.Common.Interfaces
     {
         DbSet<Product> Products { get; set; }
         DbSet<Order> Orders { get; set; }
+        DbSet<OrderEvent> OrderEvents { get; set; }
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
         int SaveChanges();

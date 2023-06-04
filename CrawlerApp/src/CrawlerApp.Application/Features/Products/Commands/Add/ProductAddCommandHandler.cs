@@ -21,17 +21,25 @@ namespace CrawlerApp.Application.Features.Products.Commands.Add
         {
             var product = new Product()
             {
+                Id = Guid.NewGuid(),
                 Name = request.Name,
                 Picture = request.Picture,
                 IsOnSale = request.IsOnSale,
                 Price = request.Price,
                 SalePrice = request.SalePrice,
-                OrderId = Guid.NewGuid()
+                OrderId = request.OrderId
             };
 
-            await _applicationDbContext.Products.AddAsync(product, cancellationToken);
-
-            await _applicationDbContext.SaveChangesAsync(cancellationToken);
+            try
+            {
+                await _applicationDbContext.Products.AddAsync(product, cancellationToken);
+                await _applicationDbContext.SaveChangesAsync(cancellationToken);
+            }
+            catch (Exception ex)
+            {
+                // Hata durumunda uygun bir yanıt döndürebilir veya loglayabilirsiniz.
+                Console.WriteLine(ex.Message +  "Veritabanına ekleme işlemi başarısız oldu.");
+            }
 
             await _productHubService.AddProductAsync(MapCommandToDto(request), cancellationToken);
 

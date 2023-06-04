@@ -7,6 +7,10 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazorise.dll": "sha256-GTg3s4AbChdrT99SGC3PohuSA6NrEofeXYm4r\/XaK6U=",
+      "Blazorise.Bootstrap.dll": "sha256-9DCGG385Q4nllXaYWoFH2sD6GIWJG2q3iARqmgNZoRA=",
+      "Blazorise.Icons.FontAwesome.dll": "sha256-wJIrw5zhaFtmZzy50Hwur\/SsivOhl1aNJoqw2qegxUk=",
+      "Blazorise.Licensing.dll": "sha256-HCvMfGG13thv3GWvUEN2Ca7avc0Bjw5kpc9h9Kk+LS0=",
       "MediatR.dll": "sha256-VtmbxEy7LTAs8mimMOyF3kQksYHd6KCNAqYQsvIa1dg=",
       "MediatR.Contracts.dll": "sha256-wmATBKqdFcUaVD4cMwA2jGSsOGM+cne7g1oE9o3famE=",
       "MediatR.Extensions.Microsoft.DependencyInjection.dll": "sha256-Eh8BdV0xKtZBQl636X+sfejrC9RSsqHYjgu5wW70WMI=",
@@ -213,17 +217,17 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "CrawlerApp.Application.dll": "sha256-GetdW4ixoKnDZuviiZ0K6hol8amaDHS3OHiXspGu3xE=",
-      "CrawlerApp.Domain.dll": "sha256-bxhnm8nsTwZXY+0aCSx5Qxfcbtull5phjp+XBzrAH6s=",
-      "CrawlerApp.Wasm.dll": "sha256-W6G3eWNmDdCBetgWcWtlYFTThjGxGMynzTX++47+09k="
+      "CrawlerApp.Application.dll": "sha256-X+tbm2Ym7fqSoSmyxUreeEdVLOrdUkVFJqxjimgSFoA=",
+      "CrawlerApp.Domain.dll": "sha256-SeBTfy41HGtFIkBp1XojSya2BHXZiw\/AgfXgjB7LCYI=",
+      "CrawlerApp.Wasm.dll": "sha256-IUAgcqwDNGbtC2pFKKmKIfRgSH3REbnA3ylIzzEkmro="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "CrawlerApp.Application.pdb": "sha256-GAWp3\/iFb8VXXG9Y+QdZOuqT03oZ828QWrrmkiZsfpo=",
-      "CrawlerApp.Domain.pdb": "sha256-bm0kShXbcizW1iKUlSIpApSAUEb1SaMP7zaytuC1yyc=",
-      "CrawlerApp.Wasm.pdb": "sha256-o7wl3NmTYZhFdq5gG2tUnWTUMK8PWrvS4Wq6A\/DvZW4="
+      "CrawlerApp.Application.pdb": "sha256-ziaIbBhvn0iI+DR+NxZaio3n\/AlhUu4ti\/V0YumXFtA=",
+      "CrawlerApp.Domain.pdb": "sha256-Hz8JwkhvifstK3dW\/xq\/ExfGRh3KTvZRxkCY4NpyACI=",
+      "CrawlerApp.Wasm.pdb": "sha256-Ze379nLbcbTPh9QcVf7ac9Ul29blA4OCQYbb\/\/97wis="
     },
     "runtime": {
       "dotnet.7.0.5.rch4hhjaxf.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",
