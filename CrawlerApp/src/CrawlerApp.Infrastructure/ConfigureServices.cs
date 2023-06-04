@@ -1,9 +1,9 @@
 ﻿using CrawlerApp.Application.Common.Interfaces;
 using CrawlerApp.Infrastructure.Persistence.Contexts;
+using CrawlerApp.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MySqlConnector;
 
 namespace CrawlerApp.Infrastructure
 {
@@ -17,6 +17,8 @@ namespace CrawlerApp.Infrastructure
             services.AddDbContext<ApplicationDbContext>(opt => opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
             services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
+
+            services.AddSingleton<IEmailService, EmailManager>();
         }
     }
 }

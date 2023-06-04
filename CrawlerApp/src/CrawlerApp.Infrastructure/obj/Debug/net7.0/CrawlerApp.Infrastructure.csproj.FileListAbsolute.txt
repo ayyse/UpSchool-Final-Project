@@ -1,8 +1,11 @@
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Infrastructure.deps.json
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Infrastructure.runtimeconfig.json
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Infrastructure.dll
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Infrastructure.pdb
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Application.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Domain.dll
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Application.pdb
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Domain.pdb
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\obj\Debug\net7.0\CrawlerApp.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\obj\Debug\net7.0\CrawlerApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\obj\Debug\net7.0\CrawlerApp.Infrastructure.AssemblyInfoInputs.cache
@@ -12,8 +15,5 @@ C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\Cr
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\obj\Debug\net7.0\CrawlerApp.Infrastructure.dll
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\obj\Debug\net7.0\refint\CrawlerApp.Infrastructure.dll
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\obj\Debug\net7.0\CrawlerApp.Infrastructure.pdb
-C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\obj\Debug\net7.0\ref\CrawlerApp.Infrastructure.dll
-C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Domain.dll
-C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Domain.pdb
-C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\bin\Debug\net7.0\CrawlerApp.Infrastructure.runtimeconfig.json
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\obj\Debug\net7.0\CrawlerApp.Infrastructure.genruntimeconfig.cache
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.Infrastructure\obj\Debug\net7.0\ref\CrawlerApp.Infrastructure.dll
