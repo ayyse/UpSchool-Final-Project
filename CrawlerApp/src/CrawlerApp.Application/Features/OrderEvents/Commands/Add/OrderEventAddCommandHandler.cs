@@ -21,6 +21,7 @@ namespace CrawlerApp.Application.Features.OrderEvents.Commands.Add
                 Id = Guid.NewGuid(),
                 OrderId = request.OrderId,
                 Status = request.Status,
+                CreatedOn = DateTimeOffset.Now
             };
 
             try

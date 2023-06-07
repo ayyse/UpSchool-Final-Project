@@ -20,6 +20,7 @@ namespace CrawlerApp.Application.Features.Orders.Commands.Add
             {
                 Id = request.Id,
                 ProductCrawlType = request.ProductCrawlType,
+                CreatedOn = DateTimeOffset.Now
                 //RequestedAmount = request.RequestedAmount,
                 //TotalFoundAmount = request.TotalFoundAmount
             };

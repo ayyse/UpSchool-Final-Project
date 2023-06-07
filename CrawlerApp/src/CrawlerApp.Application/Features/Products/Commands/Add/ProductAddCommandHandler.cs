@@ -27,7 +27,8 @@ namespace CrawlerApp.Application.Features.Products.Commands.Add
                 IsOnSale = request.IsOnSale,
                 Price = request.Price,
                 SalePrice = request.SalePrice,
-                OrderId = request.OrderId
+                OrderId = request.OrderId,
+                CreatedOn = DateTimeOffset.Now
             };
 
             try
