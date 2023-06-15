@@ -10,13 +10,27 @@
 @using CrawlerApp.Domain.Enums;
 @inject HttpClient HttpClient
 
-@*<TextEdit Style="margin-bottom: 20px;" MaskType="MaskType.RegEx" EditMask="^[0-9]*$" @bind-Value="requestedAmount" />*@
-
 <Div class="d-flex justify-content-center" Style="margin-bottom: 20px;">
-    <Button Color="Color.Primary" Style="margin-right: 10px;" Size="Size.Large" @onclick="CreateGetAllProductsOrder" Outline>Get All Products</Button>
-    <Button Color="Color.Success" Style="margin-right: 10px;" Size="Size.Large" @onclick="CreateGetOnDiscountedProductsOrder" Outline>Get On Discount Products</Button>
-    <Button Color="Color.Warning" Size="Size.Large" @onclick="CreateGetNonDiscountedProductsOrder" Outline>Get Non Discount Products</Button>
+    <NumericEdit TValue="int" @bind-Value="requestedAmount" Style="width: 200px; margin-right: 20px;" />
+
+    <Dropdown Style="margin-right: 20px;">
+        <DropdownToggle Color="Color.Primary">
+            @if (!string.IsNullOrEmpty(selectedCrawlType.ToString()))
+            {
+                @selectedCrawlType
+            }
+        </DropdownToggle>
+        <DropdownMenu>
+            @foreach (var crawlType in crawlTypes)
+            {
+                <DropdownItem @onclick="() => selectedCrawlType = crawlType">@crawlType</DropdownItem>
+            }
+        </DropdownMenu>
+    </Dropdown>
+
+    <Button Color="Color.Primary" @onclick="() => CreateGetAllProductsOrder(selectedCrawlType, requestedAmount)">Start Crawl</Button>
 </Div>
+
 
 <div class=fakeMenu>
     <div class="fakeButtons fakeClose"></div>
@@ -26,12 +40,13 @@
 <div class="fakeScreen">
     @foreach (var log in events)
     {
-        <p class="line1">@log.SentOn.ToString("g") | @log.Message</p>
+        <p class="line1">@log.SentOn.ToString("G") | @log.Message</p>
     }
 </div>
 
 
 @code {
+    private ProductCrawlType selectedCrawlType;
     private int requestedAmount;
     private OrderAddCommand order = new OrderAddCommand();
     //private OrderEventAddCommand orderEvent = new OrderEventAddCommand();
@@ -41,6 +56,13 @@
     private List<ProductAddCommand> nonDiscountedProducts = new List<ProductAddCommand>();
 
     private List<OrderEventDto> events = new List<OrderEventDto>();
+
+    private List<ProductCrawlType> crawlTypes = new List<ProductCrawlType>()
+    {
+        ProductCrawlType.All,
+        ProductCrawlType.OnDiscount,
+        ProductCrawlType.NonDiscount
+    };
 
     private HubConnection? hubConnection;
 
@@ -63,10 +85,10 @@
         await base.OnInitializedAsync();
     }
 
-    private async Task CreateGetAllProductsOrder()
+    private async Task CreateGetAllProductsOrder(ProductCrawlType crawlType, int requestedAmount)
     {
         order.Id = Guid.NewGuid();
-        order.ProductCrawlType = ProductCrawlType.All;
+        order.ProductCrawlType = crawlType;
         await HttpClient.PostAsJsonAsync("Orders", order);
 
         hubConnection = new HubConnectionBuilder()
@@ -74,80 +96,52 @@
         .WithAutomaticReconnect()
         .Build();
 
-        hubConnection.On<ProductDto>("GetAll", async (productDto) =>
-        {
-            command.Id = productDto.Id;
-            command.Name = productDto.Name;
-            command.Picture = productDto.Picture;
-            command.Price = productDto.Price;
-            command.SalePrice = productDto.SalePrice;
-            command.IsOnSale = productDto.IsOnSale;
-            command.OrderId = order.Id;
-
-            await HttpClient.PostAsJsonAsync("Products", command);
-        });
-
-        await hubConnection.StartAsync();
-    }
-
-    private async Task CreateGetOnDiscountedProductsOrder()
-    {
-        order.Id = Guid.NewGuid();
-        order.ProductCrawlType = ProductCrawlType.OnDiscount;
-        await HttpClient.PostAsJsonAsync("Orders", order);
-
-        hubConnection = new HubConnectionBuilder()
-        .WithUrl($"https://localhost:7015/Hubs/CrawlerLogHub")
-        .WithAutomaticReconnect()
-        .Build();
+        int count = 0;
 
         hubConnection.On<ProductDto>("GetAll", async (productDto) =>
         {
-            if (productDto.IsOnSale == true)
+            switch (crawlType)
             {
-                command.Id = productDto.Id;
-                command.Name = productDto.Name;
-                command.Picture = productDto.Picture;
-                command.Price = productDto.Price;
-                command.SalePrice = productDto.SalePrice;
-                command.IsOnSale = productDto.IsOnSale;
-                command.OrderId = order.Id;
+                case ProductCrawlType.All:
+                    if (count < requestedAmount)
+                    {
+                        await SaveProduct(productDto, requestedAmount);
+                        count++;
+                    }
+                    break;
 
-                await HttpClient.PostAsJsonAsync("Products", command);
+                case ProductCrawlType.OnDiscount:
+                    if (count < requestedAmount && productDto.IsOnSale)
+                    {
+                        await SaveProduct(productDto, requestedAmount);
+                        count++;
+                    }
+                    break;
+
+                case ProductCrawlType.NonDiscount:
+                    if (count < requestedAmount && !productDto.IsOnSale)
+                    {
+                        await SaveProduct(productDto, requestedAmount);
+                        count++;
+                    }
+                    break;
             }
         });
 
         await hubConnection.StartAsync();
     }
 
-    private async Task CreateGetNonDiscountedProductsOrder()
+    async Task SaveProduct(ProductDto productDto, int requestedAmount)
     {
-        order.Id = Guid.NewGuid();
-        order.ProductCrawlType = ProductCrawlType.NonDiscount;
-        await HttpClient.PostAsJsonAsync("Orders", order);
+        command.Id = productDto.Id;
+        command.Name = productDto.Name;
+        command.Picture = productDto.Picture;
+        command.Price = productDto.Price;
+        command.SalePrice = productDto.SalePrice;
+        command.IsOnSale = productDto.IsOnSale;
+        command.OrderId = order.Id;
 
-        hubConnection = new HubConnectionBuilder()
-        .WithUrl($"https://localhost:7015/Hubs/CrawlerLogHub")
-        .WithAutomaticReconnect()
-        .Build();
-
-        hubConnection.On<ProductDto>("GetAll", async (productDto) =>
-        {
-            if (productDto.IsOnSale == false)
-            {
-                command.Id = productDto.Id;
-                command.Name = productDto.Name;
-                command.Picture = productDto.Picture;
-                command.Price = productDto.Price;
-                command.SalePrice = productDto.SalePrice;
-                command.IsOnSale = productDto.IsOnSale;
-                command.OrderId = order.Id;
-            }
-
-            await HttpClient.PostAsJsonAsync("Products", command);
-        });
-
-        await hubConnection.StartAsync();
+        await HttpClient.PostAsJsonAsync("Products", command);
     }
 }
 
@@ -221,9 +215,9 @@
     .line1 {
         color: #9CD9F0;
         /* -webkit-animation: type .5s 1s steps(20, end) forwards;
-          -moz-animation: type .5s 1s steps(20, end) forwards;
-          -o-animation: type .5s 1s steps(20, end) forwards;
-          animation: type .5s 1s steps(20, end) forwards;*/
+                      -moz-animation: type .5s 1s steps(20, end) forwards;
+                      -o-animation: type .5s 1s steps(20, end) forwards;
+                      animation: type .5s 1s steps(20, end) forwards;*/
     }
 
     .cursor1 {

@@ -217,17 +217,17 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "CrawlerApp.Application.dll": "sha256-TRbd9NMUDpVcOpT2dCZG268Qyfic14Q2KxqcCvpUSQE=",
-      "CrawlerApp.Domain.dll": "sha256-UVCZkCZDi1a2vSZDe7B8Lc8ceUg2wUmMHpt7gGYSwMw=",
-      "CrawlerApp.Wasm.dll": "sha256-XmntgV8yzS0yGSkE0uCc2IW16rZLgKeoC8stwvcc+9s="
+      "CrawlerApp.Application.dll": "sha256-0UW+VtQ3vR3eygHn\/oYQZ98GTug6WqSg1Tx\/WdI7jTg=",
+      "CrawlerApp.Domain.dll": "sha256-uLe1eSDFhP9yuwVSFIKijU93JzzruxNxwsKZP3FRBGY=",
+      "CrawlerApp.Wasm.dll": "sha256-opAQ9PM5\/gtGCIBgqRAjzuVc\/aKrqPAR5baNXKVk0AY="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "CrawlerApp.Application.pdb": "sha256-RbWi4YyiAA6L5dy2qelgxIbccxk5NN6CYJlJHGpEJuM=",
-      "CrawlerApp.Domain.pdb": "sha256-6aHsb+OwrSLNjmkV\/ibHQdIGVpEk8Cn3aznCETa9vXQ=",
-      "CrawlerApp.Wasm.pdb": "sha256-SaDr0OVKUROpjwRGmK4ryMIdDFyHshH6l3X3HBFPVLg="
+      "CrawlerApp.Application.pdb": "sha256-M7xBEV4oXiHcNZbl\/JZr1CplYnNJ1M43d6bRMiXNYsY=",
+      "CrawlerApp.Domain.pdb": "sha256-eWC7NJd96HRVgpF6alrR3\/NHQorFKdjwn4vOw5UaABs=",
+      "CrawlerApp.Wasm.pdb": "sha256-CK6LgxZ8G2E27S68gDBdKTof6ZnTXtzxYu0s+jnje7w="
     },
     "runtime": {
       "dotnet.7.0.5.rch4hhjaxf.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

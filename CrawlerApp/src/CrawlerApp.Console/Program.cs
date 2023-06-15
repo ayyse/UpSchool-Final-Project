@@ -24,8 +24,8 @@ try
 {
     await hubConnection.InvokeAsync("SendLogNotificationAsync", OrderEventStatus(DateTimeOffset.Now, OrderStatus.BotStarted.ToString()));
 
-    driver.Navigate().GoToUrl("https://finalproject.dotnet.gg/");
-    await hubConnection.InvokeAsync("SendLogNotificationAsync", OrderEventStatus(DateTimeOffset.Now, "Navigated to finalproject.dotnet.gg"));
+    driver.Navigate().GoToUrl("https://4teker.net/");
+    await hubConnection.InvokeAsync("SendLogNotificationAsync", OrderEventStatus(DateTimeOffset.Now, "Navigated to 4teker.net"));
 
     Thread.Sleep(1500);
 
