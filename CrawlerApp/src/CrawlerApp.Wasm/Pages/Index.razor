@@ -52,9 +52,6 @@
     //private OrderEventAddCommand orderEvent = new OrderEventAddCommand();
     private ProductAddCommand command = new ProductAddCommand();
 
-    private List<ProductAddCommand> onDiscountedProducts = new List<ProductAddCommand>();
-    private List<ProductAddCommand> nonDiscountedProducts = new List<ProductAddCommand>();
-
     private List<OrderEventDto> events = new List<OrderEventDto>();
 
     private List<ProductCrawlType> crawlTypes = new List<ProductCrawlType>()
@@ -133,7 +130,7 @@
 
     async Task SaveProduct(ProductDto productDto, int requestedAmount)
     {
-        command.Id = productDto.Id;
+        command.Id = Guid.NewGuid();
         command.Name = productDto.Name;
         command.Picture = productDto.Picture;
         command.Price = productDto.Price;
