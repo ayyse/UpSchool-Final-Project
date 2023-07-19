@@ -1,5 +1,6 @@
 ﻿using CrawlerApp.Application.Common.Interfaces;
 using CrawlerApp.Domain.Entities;
+using Domain.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -20,6 +21,15 @@ namespace CrawlerApp.Infrastructure.Persistence.Contexts
         {
             // Configurations
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            // Ignores
+            modelBuilder.Ignore<User>();
+            modelBuilder.Ignore<Role>();
+            modelBuilder.Ignore<UserRole>();
+            modelBuilder.Ignore<RoleClaim>();
+            modelBuilder.Ignore<UserToken>();
+            modelBuilder.Ignore<UserClaim>();
+            modelBuilder.Ignore<UserLogin>();
 
             base.OnModelCreating(modelBuilder);
         }

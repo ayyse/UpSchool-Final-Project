@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6Rm/vBpnUBP56gOhDM7sWzjxpEKr51sfMM6Cebx29Gg=",
+  "Hash": "3OeF4Nc1C3LcO6eWZy/E23Y1BrPeBNpm+ndXFD8UY3k=",
   "Source": "CrawlerApp.Wasm",
   "BasePath": "/",
   "Mode": "Root",
@@ -1139,6 +1139,40 @@
       "OriginalItemSpec": "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Connections.Abstractions.dll"
     },
     {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Cryptography.Internal.dll",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Cryptography.Internal.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Cryptography.Internal.dll"
+    },
+    {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll"
+    },
+    {
       "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Connections.Client.dll",
       "SourceId": "CrawlerApp.Wasm",
       "SourceType": "Computed",
@@ -1171,6 +1205,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Http.Connections.Common.dll"
+    },
+    {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll"
     },
     {
       "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
@@ -1307,6 +1358,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aysea\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\lib\\net6.0\\Microsoft.EntityFrameworkCore.dll"
+    },
+    {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.5\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll"
     },
     {
       "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
@@ -1528,6 +1596,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.FileSystemGlobbing.dll"
+    },
+    {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Core.dll",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Identity.Core.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.identity.core\\7.0.5\\lib\\net7.0\\Microsoft.Extensions.Identity.Core.dll"
+    },
+    {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Stores.dll",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Identity.Stores.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\.nuget\\packages\\microsoft.extensions.identity.stores\\7.0.5\\lib\\net7.0\\Microsoft.Extensions.Identity.Stores.dll"
     },
     {
       "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
@@ -4522,6 +4624,23 @@
       "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\CrawlerApp.Domain.dll"
     },
     {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\+lC9AB22.gz",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Identity.Core.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Core.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Core.dll"
+    },
+    {
       "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\+O5UZB+F.gz",
       "SourceId": "CrawlerApp.Wasm",
       "SourceType": "Computed",
@@ -4658,6 +4777,23 @@
       "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IO.Pipes.AccessControl.dll"
     },
     {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\26sSk+uC.gz",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll"
+    },
+    {
       "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\276Bqdgo.gz",
       "SourceId": "CrawlerApp.Wasm",
       "SourceType": "Computed",
@@ -4690,6 +4826,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Connections.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\2Rrnd9pm.gz",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Identity.Stores.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Stores.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Identity.Stores.dll"
     },
     {
       "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\31J2qOP1.gz",
@@ -5064,6 +5217,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Handles.dll"
+    },
+    {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\aETMrtNQ.gz",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll"
     },
     {
       "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\ALU+1aoh.gz",
@@ -6288,6 +6458,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IO.Compression.dll"
+    },
+    {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\jMtO1jEP.gz",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll"
     },
     {
       "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\jWPlyU+w.gz",
@@ -7648,6 +7835,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll"
+    },
+    {
+      "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\tyrTCYe6.gz",
+      "SourceId": "CrawlerApp.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Cryptography.Internal.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Cryptography.Internal.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Cryptography.Internal.dll"
     },
     {
       "Identity": "C:\\Users\\aysea\\OneDrive\\Belgeler\\GitHub\\UpSchool-Final-Project\\CrawlerApp\\src\\CrawlerApp.Wasm\\obj\\Debug\\net7.0\\build-gz\\u+nggFuj.gz",

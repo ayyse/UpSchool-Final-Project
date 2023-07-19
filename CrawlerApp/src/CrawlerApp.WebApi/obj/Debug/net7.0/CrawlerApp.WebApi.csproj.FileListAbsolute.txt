@@ -226,3 +226,9 @@ C:\Users\aysea\OneDrive\Masaüstü\CrawlerApp\src\CrawlerApp.WebApi\obj\Debug\ne
 C:\Users\aysea\OneDrive\Masaüstü\CrawlerApp\src\CrawlerApp.WebApi\obj\Debug\net7.0\CrawlerApp.WebApi.pdb
 C:\Users\aysea\OneDrive\Masaüstü\CrawlerApp\src\CrawlerApp.WebApi\obj\Debug\net7.0\CrawlerApp.WebApi.genruntimeconfig.cache
 C:\Users\aysea\OneDrive\Masaüstü\CrawlerApp\src\CrawlerApp.WebApi\obj\Debug\net7.0\ref\CrawlerApp.WebApi.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\System.Security.Permissions.dll
