@@ -5,10 +5,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CrawlerApp.WebApi.Controllers
 {
+    [Authorize]
     public class OrdersController : ApiControllerBase
     {
         [HttpPost("GetAll")]
-        [AllowAnonymous]
         public async Task<IActionResult> GetAllAsync(OrderGetAllQuery query)
         {
             return Ok(await Mediator.Send(query));

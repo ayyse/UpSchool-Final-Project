@@ -1,4 +1,5 @@
 ﻿using CrawlerApp.Application.Common.Models.Auth;
+using CrawlerApp.Application.Features.Auth.Commands.Login;
 
 namespace CrawlerApp.Application.Common.Interfaces
 {
@@ -6,5 +7,6 @@ namespace CrawlerApp.Application.Common.Interfaces
     {
         Task<string> CreateUserAsync(CreateUserDto createUserDto, CancellationToken cancellationToken);
         Task<string> GenerateEmailActivationTokenAsync(string userId, CancellationToken cancellationToken);
+        Task<JwtDto> LoginAsync(AuthLoginRequest authLoginRequest, CancellationToken cancellationToken);
     }
 }
