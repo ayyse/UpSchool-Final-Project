@@ -24,7 +24,7 @@ namespace CrawlerApp.Infrastructure.Services
             if (!identityResult.Succeeded)
             {
                 // ValidationFailure
-            }
+            }            
 
             return user.Id;
         }

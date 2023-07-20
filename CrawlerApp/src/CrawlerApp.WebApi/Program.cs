@@ -3,6 +3,7 @@ using CrawlerApp.Infrastructure;
 using CrawlerApp.Application;
 using CrawlerApp.WebApi.Hubs;
 using CrawlerApp.WebApi.Services;
+using CrawlerApp.Domain.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
 
 builder.Services.AddSignalR();
 

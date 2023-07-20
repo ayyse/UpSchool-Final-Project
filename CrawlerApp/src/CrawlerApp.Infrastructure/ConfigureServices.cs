@@ -41,6 +41,7 @@ namespace CrawlerApp.Infrastructure
 
             services.AddSingleton<IEmailService, EmailManager>();
             services.AddScoped<IAuthenticationService, AuthenticationManager>();
+            services.AddSingleton<IJwtService, JwtManager>();
         }
     }
 }
