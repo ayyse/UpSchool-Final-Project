@@ -40,6 +40,7 @@ namespace CrawlerApp.Infrastructure
                 .AddDefaultTokenProviders();
 
             services.AddSingleton<IEmailService, EmailManager>();
+            services.AddScoped<IAuthenticationService, AuthenticationManager>();
         }
     }
 }
