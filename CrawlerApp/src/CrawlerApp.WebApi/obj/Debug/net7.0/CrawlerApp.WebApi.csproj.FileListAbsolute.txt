@@ -240,3 +240,8 @@ C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\Cr
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Google.Apis.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Google.Apis.Auth.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Google.Apis.Core.dll
+C:\Users\aysea\OneDrive\Belgeler\GitHub\UpSchool-Final-Project\CrawlerApp\src\CrawlerApp.WebApi\bin\Debug\net7.0\Newtonsoft.Json.dll

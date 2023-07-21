@@ -8,5 +8,6 @@ namespace CrawlerApp.Application.Common.Interfaces
         Task<string> CreateUserAsync(CreateUserDto createUserDto, CancellationToken cancellationToken);
         Task<string> GenerateEmailActivationTokenAsync(string userId, CancellationToken cancellationToken);
         Task<JwtDto> LoginAsync(AuthLoginRequest authLoginRequest, CancellationToken cancellationToken);
+        Task<JwtDto> SocialLoginAsync(string email, string firstName, string lastName, CancellationToken cancellationToken);
     }
 }

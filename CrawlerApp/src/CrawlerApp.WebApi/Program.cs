@@ -41,6 +41,7 @@ builder.Services.AddSwaggerGen(setupAction =>
 });
 
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
+builder.Services.Configure<GoogleSettings>(builder.Configuration.GetSection("GoogleSettings"));
 
 builder.Services.AddSignalR();
 
