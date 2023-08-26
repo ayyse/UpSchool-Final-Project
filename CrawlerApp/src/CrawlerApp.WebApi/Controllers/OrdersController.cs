@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CrawlerApp.WebApi.Controllers
 {
-    [Authorize]
     public class OrdersController : ApiControllerBase
     {
         [HttpPost("GetAll")]
